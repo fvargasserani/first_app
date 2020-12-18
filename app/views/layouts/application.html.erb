@@ -9,13 +9,13 @@
   </head>
 
   <body>
-  <nav class='navbar-inverse'>
-    <ul>
-      <li><a href="<%=pages_one_path%>">One</a></li>
-      <li><a href="<%=pages_two_path%>">Two</a></li>
-      <li><a href="<%=pages_three_path%>">Three</a></li>
-    </ul>
-  </nav>
+    <nav class='navbar-inverse'>
+      <ul>
+        <li><%= link_to "One", pages_one_path%></li>
+        <li><%= link_to "Two", pages_two_path%></li>
+        <li><%= link_to "Three", pages_three_path%></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
